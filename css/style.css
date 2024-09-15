@@ -1,0 +1,116 @@
+.container {
+    height: 100%;
+    width: 92%;
+    margin: auto;
+}
+
+.container-beranda {
+    display: flex;
+    width: auto;
+    height: auto;
+    background-color: #FFF8E8;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+.container-biodata {
+    width: auto;
+    height: auto;
+    background-color: #FFF8E8;
+}
+
+.nav-container {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+.container-perkenalan-singkat {
+    margin: auto 20px;
+}
+
+.perkenalan-singkat {
+    padding: 20px 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 80%;
+    align-self: center;
+    /* border: 2px solid red; */
+}
+
+.perkenalan-singkat h1, h3{
+    margin-left: 30px;
+    margin-right: 30px;
+    /* border: 2px solid red; */
+}
+
+.container-biodata h1 {
+    margin: 0 100px;
+    padding-top: 30px;
+}
+
+.foto-pribadi {
+    padding: 20px 20px;
+    /* padding-right: 20px; */
+    /* padding-left: 20px; */
+    align-self: center;
+    /* border: 1px solid red; */
+}
+
+.foto-algof {
+    width: 200px;
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;
+}
+
+.foto-algof:hover {
+    transform: translateY(-20px);
+}
+
+/* Table Styles */
+@media only screen and (min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav {
+    background-color: #F7EED3;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    color: #674636;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 20px;
+}
