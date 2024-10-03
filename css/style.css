@@ -4,19 +4,32 @@
     margin: auto;
 }
 
+.container-fav-youtube-vid {
+    width: auto;
+    height: auto;
+    background-color: #FFF8E8;
+    padding-bottom: 30px;
+}
+
 .container-beranda {
     display: flex;
     width: auto;
     height: auto;
     background-color: #FFF8E8;
     justify-content: center;
+    flex-wrap: wrap;
     /* border: 2px solid red; */
 }
 
 .container-biodata {
     width: auto;
     height: auto;
-    background-color: #FFF8E8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #F7EED3;
 }
 
 .nav-container {
@@ -27,6 +40,114 @@
 
 .container-perkenalan-singkat {
     margin: auto 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.container-alamat-sma {
+    background-color: #FFF8E8;
+    padding-bottom: 30px;
+}
+
+.container-alamat-sma h1 {
+    padding-top: 20px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.peta-sma {
+    display: flex;
+    justify-content: center;
+}
+
+.judul-fav-web {
+    background-color: #F7EED3;
+    padding-top: 30px;
+    padding-bottom: -10px;
+    margin: 0px 0px;
+    text-align: center;
+}
+
+.judul-fav-vid {
+    background-color: #FFF8E8;
+    padding-top: 30px;
+    padding-bottom: -10px;
+    margin: 0px 0px;
+    text-align: center;
+}
+
+.container-fav-video {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    padding: 20px 20px;
+    background-color: #FFF8E8;
+    justify-content: space-evenly;
+}
+
+.card-video {
+    width: 300px;
+    height: 168.75px;
+    transition: 150ms ease;
+    cursor: pointer;
+    margin: 20px 20px;
+}
+
+.card-video iframe:hover {
+    scale: 1.2;
+}
+
+.container-fav-website {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    padding: 20px 20px;
+    background-color: #F7EED3;
+    justify-content: space-evenly;
+}
+
+.card-website {
+    display: flex;
+    margin: 20px 20px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* justify-content: center; rata tengah vertikal  */
+    align-items: center; /* rata tengah horizotal */
+    width: 200px;
+    height: 240px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-website img {
+    width: 180px;
+    height: 180px;
+}
+
+.card-website a {
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    text-align: center;
+    transition: 150ms ease;
+    cursor: pointer;
+    /* font-weight: 500; */
+}
+
+.card-website a:hover {
+    scale: 1.2;
+}
+
+.container-img-web {
+    height: 180px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .perkenalan-singkat {
@@ -45,9 +166,27 @@
     /* border: 2px solid red; */
 }
 
-.container-biodata h1 {
+.content-biodata {
+    align-self: center;
+}
+
+.content-biodata h1{
     margin: 0 100px;
-    padding-top: 30px;
+}
+
+.list-biodata{
+    line-height: 25px;
+    margin-top: 20px;
+    margin: 0 77px;
+}
+
+.hiasan-biodata {
+    position: relative;
+    align-self: center;
+    height: 300px;
+    width: 300px;
+    margin-right: 100px;
+    border-radius: 50%;
 }
 
 .foto-pribadi {
@@ -66,6 +205,10 @@
 
 .foto-algof:hover {
     transform: translateY(-20px);
+}
+
+.foto-logo-html {
+    width: 300px;
 }
 
 /* Table Styles */
@@ -113,4 +256,18 @@ nav a {
     text-decoration: none;
     text-align: center;
     padding: 14px 20px;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+html {
+    scroll-behavior: smooth;
 }
